@@ -543,36 +543,35 @@ h6 {
 }
 
 .history {
+  margin-bottom: 140px;
 }
 
 .history__card-wrapper--first-block {
   width: 1170px;
   display: flex;
   justify-content: space-between;
-}
-
-.history__card-item {
+  margin-bottom: 140px;
 }
 
 .history__card-img--first {
   background-image: url(/img/bestcoffee1.png);
   background-repeat: no-repeat;
   width: 366px;
-  height: 474px;
+  height: 420px;
 }
 
 .history__card-img--second {
   background-image: url(/img/bestcoffee2.png);
   background-repeat: no-repeat;
   width: 366px;
-  height: 474px;
+  height: 420px;
 }
 
 .history__card-img--third {
   background-image: url(/img/bestcoffee3.png);
   background-repeat: no-repeat;
   width: 366px;
-  height: 474px;
+  height: 420px;
 }
 
 .history__card-title {
@@ -593,4 +592,73 @@ h6 {
   line-height: 30px;
   text-transform: uppercase;
   color: #c99e71;
+}
+
+.history__card-wrapper--second-block {
+  display: flex;
+}
+
+.history__card-small {
+  margin-right: 32px;
+}
+
+.history__card-top__img-wrapper {
+  background-image: url(/img/ourstory1.png);
+  width: 298px;
+  height: 302px;
+  margin-bottom: 32px;
+}
+.history__card-bottom__img-wrapper {
+  background-image: url(/img/ourstory2.png);
+  width: 298px;
+  height: 302px;
+  background-repeat: no-repeat;
+}
+.history__card-big__img-wrapper {
+  background-image: url(/img/ourstory-big.png);
+  width: 298px;
+  height: 635px;
+  margin-right: 32px;
+}
+.history__card-content__wrapper {
+  background: #1c1814;
+  width: 510px;
+  height: 635px;
+}
+
+.history__card-content {
+  padding-top: 120px;
+  padding-right: 56px;
+  padding-left: 56px;
+}
+
+.history__card-content__pretitle {
+  font-family: "eurofurence", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c99e71;
+  padding-bottom: 12px;
+}
+
+.history__card-content__title {
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffffff;
+  padding-bottom: 36px;
+}
+
+.history__card-content__lead {
+  font-family: "eurofurence", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
 }

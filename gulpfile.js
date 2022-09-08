@@ -10,7 +10,7 @@ const newer = require("gulp-newer");
 
 const paths = {
   styles: {
-    src: ["src/styles/**/*.scss", "src/styles/**/*.css"],
+    src: "src/styles/**/*.scss",
     dest: "build/styles/",
   },
   html: {
@@ -22,7 +22,7 @@ const paths = {
     dest: "build/fonts/",
   },
   images: {
-    src: "/src/img/**/*",
+    src: "src/img/**/*",
     dest: "build/img/",
   },
 };

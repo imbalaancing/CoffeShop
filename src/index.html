@@ -4,13 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./fonts/Comfortaa-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Comfortaa-SemiBold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/eurofurenceregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Inter-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Inter-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles/main.min.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>HEY</h1>
-    <div>
-      <p class="parag">How are you do?</p>
-    </div>
+    <header class="header">
+      <div class="nav__bg"></div>
+      <div class="container">
+        <div class="header__nav">
+          <ul class="header__nav-list--left">
+            <li class="header__nav-item--left">
+              <a href="#" class="header__nav-links--main">Home</a>
+            </li>
+            <li class="header__nav-item--left">
+              <a href="#" class="header__nav-links">About</a>
+            </li>
+            <li class="header__nav-item--left">
+              <a href="#" class="header__nav-links">Menu</a>
+            </li>
+            <li class="header__nav-item--left">
+              <a href="#" class="header__nav-links">Reservation</a>
+            </li>
+          </ul>
+          <div class="logo"></div>
+          <ul class="header__nav-list--right">
+            <li class="header__nav-item--right">
+              <a href="#" class="header__nav-links">Pages</a>
+            </li>
+            <li class="header__nav-item--right">
+              <a href="#" class="header__nav-links">Shop</a>
+            </li>
+            <li class="header__nav-item--right">
+              <a href="#" class="header__nav-links">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__content">
+          <h1 class="header__title">Enjoy Your Morning Coffee.</h1>
+          <p class="header__lead">
+            The coofee is brewed by fist roasting the green coffee beans over
+            hot coals in brazier. given to Opportunity
+          </p>
+          <div class="header__btn-wrapper">
+            <a href="#" class="header__btn">Test Coffee</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="history">
+        <div class="container">
+          <div class="history__card-wrapper--first-block">
+            <div class="history__card-item">
+              <h3 class="history__card-title">
+                <span class="history__card-number">01</span>
+                Best Coffee Flavour
+              </h3>
+              <div class="history__card-img--first"></div>
+            </div>
+            <div class="history__card-item">
+              <h3 class="history__card-title">
+                <span class="history__card-number">02</span>
+                Place to get lost
+              </h3>
+              <div class="history__card-img--second"></div>
+            </div>
+            <div class="history__card-item">
+              <h3 class="history__card-title">
+                <span class="history__card-number">03</span>
+                Proper roesting
+              </h3>
+              <div class="history__card-img--third"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

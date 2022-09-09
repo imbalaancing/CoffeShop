@@ -440,7 +440,7 @@ h6 {
 .header {
   background-image: url(/img/header-bg.png);
   background-repeat: no-repeat;
-  background-position: right 0 bottom 0;
+  background-position: center;
   height: 866px;
   margin-bottom: 140px;
 }
@@ -456,6 +456,7 @@ h6 {
   position: relative;
   height: 125px;
   display: flex;
+  justify-content: space-evenly;
 }
 
 .header__nav-list--left {
@@ -477,7 +478,6 @@ h6 {
   background-image: url(/img/logo.svg);
   width: 72px;
   height: 60px;
-  right: 565px;
   bottom: 43px;
 }
 
@@ -744,14 +744,13 @@ h6 {
 
 .popular-product__card__btn-wrapper {
   margin-left: 40px;
-  width: 366px;
+  width: 173px;
+  height: 48px;
   position: relative;
 }
 
 .popular-product__card__btn {
   background: #c99e71;
-  width: 179px;
-  height: 48px;
   display: block;
   font-family: "Urbanist";
   font-style: normal;
@@ -826,6 +825,7 @@ h6 {
 .popular-product__allproduct__btn-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom: 140px;
 }
 
 .popular-product__allproduct__btn {
@@ -840,4 +840,69 @@ h6 {
   width: 260px;
   height: 62px;
   background: #c99e71;
+}
+
+.popular-product__coffeemachine__card {
+  position: relative;
+  height: 530px;
+  display: flex;
+  background: #1c1814;
+}
+
+.popular-product__coffeemachine__img-wrapper {
+  padding-top: 85px;
+  width: 585px;
+}
+
+.popular-product__coffeemachine__img {
+  position: absolute;
+  left: 185px;
+}
+
+.popular-product__coffeemachine__card-content {
+  padding-top: 72px;
+  width: 600px;
+}
+
+.popular-product__coffeemachine__card-title {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffffff;
+  padding-bottom: 36px;
+  width: 526px;
+}
+
+.popular-product__coffeemachine__card-lead {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.8;
+  width: 526px;
+  padding-bottom: 36px;
+}
+
+.popular-product__coffeemachine__btn-wrapper {
+  width: 217px;
+  height: 62px;
+
+  background: #c99e71;
+}
+
+.popular-product__coffeemachine__btn {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 36px;
 }

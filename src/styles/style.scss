@@ -407,7 +407,7 @@ template {
    * Add the correct display in IE 10.
    */
 
-[hidden] {
+.hidden {
   display: none;
 }
 
@@ -431,7 +431,7 @@ h6 {
 //////////////////////////////////////////////////////////////////////////////////
 
 .container {
-  width: 1366px;
+  width: 1180px;
   position: relative;
   margin: 0 auto;
   padding: 0 15px;
@@ -440,6 +440,7 @@ h6 {
 .header {
   background-image: url(/img/header-bg.png);
   background-repeat: no-repeat;
+  background-position: right 0 bottom 0;
   height: 866px;
   margin-bottom: 140px;
 }
@@ -476,7 +477,7 @@ h6 {
   background-image: url(/img/logo.svg);
   width: 72px;
   height: 60px;
-  right: 609px;
+  right: 565px;
   bottom: 43px;
 }
 
@@ -679,4 +680,164 @@ h6 {
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.8);
   opacity: 0.8;
+}
+
+.popular-product {
+  margin-bottom: 140px;
+}
+
+.popular-product__titles {
+  text-align: center;
+  margin-bottom: 104px;
+}
+.popular-product__pretitle {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c99e71;
+  margin-bottom: 12px;
+}
+.popular-product__title {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.popular-product__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 92px;
+}
+.popular-product__card {
+  display: flex;
+  flex-direction: column;
+  width: 286px;
+  height: 579px;
+}
+
+.popular-product__card:last-of-type {
+  margin-right: 0;
+}
+
+.popular-product__card-img {
+  width: 270px;
+  height: 373px;
+  padding-bottom: 36px;
+}
+
+.popular-product__card-lead {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 38px;
+  text-align: center;
+  width: 260px;
+}
+
+.popular-product__card__btn-wrapper {
+  margin-left: 40px;
+  width: 366px;
+  position: relative;
+}
+
+.popular-product__card__btn {
+  background: #c99e71;
+  width: 179px;
+  height: 48px;
+  display: block;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 13px 21px 13px 56px;
+}
+
+.popular-product__card__btn-first::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  background-image: url(/img/shopping-bag.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.popular-product__card__btn-second::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  background-image: url(/img/shopping-bag.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.popular-product__card__btn-third::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  background-image: url(/img/shopping-bag.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.popular-product__card-rating {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  color: #c99e71;
+}
+
+.popular-product__card-price {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.popular-product__card-price--special {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #c99e71;
+}
+
+.popular-product__allproduct__btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.popular-product__allproduct__btn {
+  padding: 20px 36px 20px 36px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 260px;
+  height: 62px;
+  background: #c99e71;
 }

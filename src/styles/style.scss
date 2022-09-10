@@ -906,3 +906,77 @@ h6 {
   color: #ffffff;
   padding: 20px 36px;
 }
+
+.menu {
+  margin-bottom: 140px;
+}
+
+.menu__titles {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.menu__pretitle {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c99e71;
+  margin-bottom: 12px;
+}
+
+.menu__title {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.menu__coffee-list__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu__coffee-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 565px;
+  height: 120px;
+  border: 1px solid #32323d;
+  margin-bottom: 36px;
+}
+
+.menu__coffee-list__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.menu__coffee-item__img {
+  width: 72px;
+  height: 72px;
+  padding-left: 24px;
+}
+
+.menu__coffee-item__title {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.menu__coffee-item__price {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #c99e71;
+  padding-right: 24px;
+}

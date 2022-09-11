@@ -759,6 +759,7 @@ h6 {
   line-height: 22px;
   color: #ffffff;
   padding: 13px 21px 13px 56px;
+  cursor: pointer;
 }
 
 .popular-product__card__btn-first::before {
@@ -840,6 +841,7 @@ h6 {
   width: 260px;
   height: 62px;
   background: #c99e71;
+  cursor: pointer;
 }
 
 .popular-product__coffeemachine__card {
@@ -905,6 +907,7 @@ h6 {
   text-transform: uppercase;
   color: #ffffff;
   padding: 20px 36px;
+  cursor: pointer;
 }
 
 .menu {
@@ -983,6 +986,7 @@ h6 {
 }
 
 .customers {
+  margin-bottom: 140px;
 }
 
 .customers__titles {
@@ -1095,67 +1099,44 @@ h6 {
 }
 
 .customers__slider-btn__next {
-  background: #fff;
-  height: 1px;
-  width: 18px;
-  margin: 0 auto;
-  position: relative;
-  cursor: pointer;
-  left: 44px;
-  z-index: 2;
-}
-
-.customers__slider-btn__next::before {
-  content: "";
-  background: #fff;
   position: absolute;
-  height: 1.5px;
-  width: 9px;
-  right: -1px;
-  bottom: -2px;
-  transform: rotate(-35deg);
+  background: #c99e71;
+  border-radius: 50px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  border-width: 0;
+  left: -5px;
+  top: -28px;
 }
 
 .customers__slider-btn__next::after {
   content: "";
-  background: #fff;
   position: absolute;
-  height: 1.5px;
-  width: 9px;
-  right: -1px;
-  top: -2px;
-  transform: rotate(35deg);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/arrow-next.svg);
+  top: 17px;
+  left: 17px;
 }
 
 .customers__slider-btn__prev {
-  background: #fff;
-  height: 1px;
-  width: 18px;
-  margin: 0 auto;
-  position: relative;
-  cursor: pointer;
-}
-
-.customers__slider-btn__prev::before {
-  content: "";
-  background: #fff;
   position: absolute;
-  height: 1.5px;
-  width: 9px;
-  right: 7px;
-  bottom: -2px;
-  transform: rotate(35deg);
+  cursor: pointer;
+  background: #14110e;
+  border-width: 0;
 }
 
 .customers__slider-btn__prev::after {
   content: "";
-  background: #fff;
   position: absolute;
-  height: 1.5px;
-  width: 9px;
-  right: 7px;
-  top: -2px;
-  transform: rotate(-35deg);
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/arrow-prev.svg);
+  top: -9px;
+  left: -66px;
 }
 
 .slide--1 {
@@ -1169,4 +1150,297 @@ h6 {
 }
 
 .slide--4 {
+}
+
+.reservation {
+  margin-bottom: 140px;
+}
+
+.reservation__content-wrapper {
+  display: flex;
+}
+
+.reservation__content-map__img {
+  width: 585px;
+  height: 652px;
+}
+
+.reservation__content-form__wrapper {
+  background: #1c1814;
+  width: 585px;
+  height: 652px;
+}
+
+.reservation__content-form__titles {
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 56px;
+}
+
+.reservation__content-form__pretitle {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c99e71;
+}
+
+.reservation__content-form__title {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+}
+
+.reservation__content-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation__content-form__input {
+  width: 469px;
+  height: 64px;
+  background: #14110e;
+  margin-bottom: 24px;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 180%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  border-color: #14110e;
+  border-width: 0;
+  padding-left: 20px;
+}
+
+.reservation__content-form__input:last-of-type {
+  margin-bottom: 56px;
+}
+
+.reservation__content-form__button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px 30px;
+  background: #c99e71;
+  width: 202px;
+  height: 62px;
+}
+
+.news {
+  margin-bottom: 140px;
+}
+
+.news__titles {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.news__pretitle {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c99e71;
+}
+
+.news__title {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.news__card-list {
+  display: flex;
+  position: relative;
+}
+.news__card-item {
+  margin-right: 36px;
+}
+
+.news__card-item:last-child {
+  margin-right: 0;
+}
+
+.news__card-item__img {
+  width: 366px;
+  height: 360px;
+  margin-bottom: -3px;
+}
+
+.news__card-content {
+  background: #1c1814;
+  width: 366px;
+  height: 168px;
+}
+
+.news__card-content__by {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px 16px 24px;
+}
+
+.news__card-content__by-name {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.special {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c99e71;
+}
+
+.news__card-content__by-date {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.news__card-content__lead {
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+
+.news__card-content__link {
+  position: relative;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 24px;
+  color: #c99e71;
+}
+
+.news__card-content__link::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/arrow-right.svg);
+  width: 24px;
+  height: 24px;
+  left: 111px;
+  top: -2px;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.footer__logo {
+  background-image: url(/img/logo.svg);
+  width: 72px;
+  height: 60px;
+  margin-right: 36px;
+}
+
+.footer__nav-list {
+  display: flex;
+}
+
+.footer__nav-item {
+  margin-right: 40px;
+}
+
+.footer__nav-item:last-of-type {
+  margin-right: 82px;
+}
+
+.footer__naw-link {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.footer__nav-input {
+  position: relative;
+  width: 310px;
+  height: 72px;
+  background: #1c1814;
+  border-radius: 36px;
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  text-transform: capitalize;
+  border-color: #14110e;
+  border-width: 0;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 26px;
+  opacity: 0.8;
+}
+
+.footer__nav-btn {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  background: #c99e71;
+  box-shadow: 0px 22px 44px rgba(201, 158, 113, 0.2);
+  border-radius: 25px;
+  right: 35px;
+  cursor: pointer;
+  border-width: 0;
+}
+
+.footer__nav-btn::after {
+  content: "";
+  position: absolute;
+  background-image: url(/img/arrow-footer-right.svg);
+  width: 24px;
+  height: 24px;
+  top: 12px;
+  left: 12px;
+}
+
+.footer__bg {
+  background: #1c1814;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__rights {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 180%;
+  color: #ffffff;
 }

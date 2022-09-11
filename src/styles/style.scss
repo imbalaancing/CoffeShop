@@ -1014,20 +1014,37 @@ h6 {
 
 .customers__slider {
   position: relative;
+  overflow: hidden;
   display: flex;
+  font-display: row;
   height: 397px;
 }
 
 .customers__slide {
-  position: absolute;
   background: #1c1814;
   width: 565px;
   height: 305px;
+  margin-right: 40px;
+}
+
+.slide {
+  display: flex;
+  height: 305px;
+}
+
+.slide {
+  display: flex;
+  height: 305px;
+
+  transition: transform 0.5s;
+}
+
+.customers__slide:last-of-type {
+  margin-right: 0;
 }
 
 .customers__slide-content {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .customers__slide-content__img {
@@ -1037,6 +1054,7 @@ h6 {
   padding-left: 40px;
   padding-right: 24px;
   padding-bottom: 28px;
+  object-fit: cover;
 }
 
 .customers__slide-content__lead {
@@ -1090,8 +1108,8 @@ h6 {
 
 .customers__slider-btns {
   position: absolute;
-  bottom: 13px;
-  right: 48px;
+  bottom: 28px;
+  right: 53px;
 }
 
 .customers__slider-btn__wrapper {
@@ -1143,7 +1161,6 @@ h6 {
 }
 
 .slide--2 {
-  right: 0;
 }
 
 .slide--3 {

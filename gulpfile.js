@@ -7,6 +7,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const imagemin = require("gulp-imagemin");
 const browserSync = require("browser-sync").create();
 const newer = require("gulp-newer");
+const uglify = require("gulp-uglify");
 
 const paths = {
   styles: {
@@ -24,6 +25,10 @@ const paths = {
   images: {
     src: "src/img/**/*",
     dest: "build/img/",
+  },
+  scripts: {
+    src: "src/scripts/**/*.js",
+    dest: "build/js/",
   },
 };
 
@@ -109,6 +114,13 @@ function img() {
     .pipe(gulp.dest(paths.images.dest));
 }
 
+function scripts() {
+  return gulp
+    .src(paths.scripts.src)
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.scripts.dest));
+}
+
 /**
  * image change control
  */
@@ -138,6 +150,7 @@ function observer() {
   gulp.watch(paths.fonts.src, copyFonts);
   gulp.watch(paths.fonts.src).on("unlink", cleanFonts);
   gulp.watch(paths.images.src).on("change", browserSync.reload);
+  gulp.watch(paths.scripts.src, scripts);
 }
 
 /**
@@ -164,8 +177,12 @@ gulp.task(
     copyFonts,
     imgStreamHandler,
     styles,
+    scripts,
     observer,
     sync
   )
 );
-gulp.task("build", gulp.series(removeBuild, copyHtml, copyFonts, img, styles));
+gulp.task(
+  "build",
+  gulp.series(removeBuild, copyHtml, copyFonts, img, styles, scripts)
+);

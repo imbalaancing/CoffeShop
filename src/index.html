@@ -40,6 +40,18 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
     <script defer src="./js/main.js"></script>
     <title>Document</title>
   </head>
@@ -52,13 +64,15 @@
             <a href="#" class="header__nav-links--main">Home</a>
           </li>
           <li class="header__nav-item--left">
-            <a href="#" class="header__nav-links">About</a>
+            <a href="#" class="header__nav-links about">About</a>
           </li>
           <li class="header__nav-item--left">
-            <a href="#" class="header__nav-links">Menu</a>
+            <a id="btnMenu" href="#menu" class="header__nav-links">Menu</a>
           </li>
           <li class="header__nav-item--left">
-            <a href="#" class="header__nav-links">Reservation</a>
+            <a href="#reservation" class="header__nav-links reservation"
+              >Reservation</a
+            >
           </li>
         </ul>
         <div class="logo"></div>
@@ -168,7 +182,15 @@
                 alt="coffee bag packaging mockup"
                 class="popular-product__card-img"
               />
+              <span class="popular-product__card-rating rating--1">Coffee</span>
               <p class="popular-product__card-lead">brazil coffee gred</p>
+              <p class="popular-product__card-price price--1">
+                Price -
+                <span class="popular-product__card-price--special"
+                  >$320.00/</span
+                >
+                $358
+              </p>
               <div class="popular-product__card__btn-wrapper">
                 <button
                   type="submit"
@@ -184,9 +206,9 @@
                 alt="coffee bag packaging mockup"
                 class="popular-product__card-img"
               />
-              <span class="popular-product__card-rating hidden">Coffee</span>
+              <span class="popular-product__card-rating rating--2">Coffee</span>
               <p class="popular-product__card-lead">brazil coffee gred</p>
-              <p class="popular-product__card-price hidden">
+              <p class="popular-product__card-price price--2">
                 Price -
                 <span class="popular-product__card-price--special"
                   >$320.00/</span
@@ -208,9 +230,9 @@
                 alt="coffee bag packaging mockup"
                 class="popular-product__card-img"
               />
-              <p class="popular-product__card-rating hidden">Coffee</p>
+              <p class="popular-product__card-rating rating--3">Coffee</p>
               <p class="popular-product__card-lead">brazil coffee gred</p>
-              <p class="popular-product__card-price hidden">
+              <p class="popular-product__card-price price--3">
                 Price -
                 <span class="popular-product__card-price--special"
                   >$320.00/</span
@@ -260,7 +282,7 @@
           </div>
         </div>
       </section>
-      <section class="menu">
+      <section id="menu" class="menu">
         <div class="container">
           <div class="menu__titles">
             <span class="menu__pretitle">Menu</span>
@@ -558,16 +580,10 @@
           </div>
         </div>
       </section>
-      <section class="reservation">
+      <section id="reservation" class="reservation">
         <div class="container">
           <div class="reservation__content-wrapper">
-            <div class="reservation__content-map">
-              <img
-                src="./img/map.png"
-                alt="map for booking"
-                class="reservation__content-map__img"
-              />
-            </div>
+            <div id="map" class="reservation__content-map"></div>
             <div class="reservation__content-form__wrapper">
               <div class="reservation__content-form__titles">
                 <span class="reservation__content-form__pretitle"
